@@ -24,6 +24,8 @@ public class Title_Script : MonoBehaviour
 
     public void OnClickStartButton()
     {
+        
+
         Camera_Title.SetActive(false);
         Camera_Main.SetActive(true);
         Camera_Item1.SetActive(false);
@@ -41,6 +43,7 @@ public class Title_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.SetResolution(1980, 1080, false);
 
         StartButton.onClick.AddListener(OnClickStartButton);
         QuitButton.onClick.AddListener(OnClickQuitButton);
